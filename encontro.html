@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ecc 2023</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+  body {
+    background-color: #111827;
+    color: #fff;
+  }
+</style>
+
+<body>
+
+  <nav class="navbar bg-dark navbar-expand-lg border-bottom border-bottom-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/ecc-transparente.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        ECC 2023
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Alternar de navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="myDIV">
+          <li class="nav-item m-2">
+            <a class="nav-link" aria-current="page" href="encontro.html">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Encontro</font>
+              </font>
+            </a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="palestra.html">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Palestra</font>
+              </font>
+            </a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="missa.html">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Missa</font>
+              </font>
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Procurar">
+          <button class="btn btn-outline-success" type="submit">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Procurar</font>
+            </font>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div>
+        <h1 class="text-center mb-1 mt-4">Músicas / Encontro</h1>
+        <div class="d-block mx-auto mb-4" style="border-bottom: 5px solid #c73927;width: 30vh;"></div>
+      </div>
+
+      <div class="container buscar">
+        <input class="form-control me-2" autofocus type="text" id="myInput" onkeyup="myFunction()"
+          placeholder="Pesquisar música..." title="Buscar unidade de saúde">
+      </div>
+      <section class="cards-encontro">
+        <ul class="list-unstyled row container-fluid mt-4" id="myUL">
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/1.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">01 - Aleluia</h5>
+                  <p class="card-text">Pode entrar que a casa é sua...</p>
+                  <!-- <btn href="/encontro/letras/1.html" class="btn btn-primary fw-semibold letra mt-3"><i class="fa fa-book"
+                      aria-hidden="true"></i> Letra</btn> -->
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/2.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">02 - Cristo já vem</h5>
+                  <p class="card-text">Cristo já vem Iluminar...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/3.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">03 - Lenta é calma</h5>
+                  <p class="card-text">Lenta e calma sobre a terra...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/4.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">04 - Alô bom dia</h5>
+                  <p class="card-text">Alô, bom dia...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/5.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">05 - Te amarei senhor</h5>
+                  <p class="card-text">Me chamaste para caminhar...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+            </a>
+
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/6.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">06 - Ninguém te ama como eu</h5>
+                  <p class="card-text">Tenho esperado este momento...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/7.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">07 - Sempre encontrando</h5>
+                  <p class="card-text">Sempre encontrando...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/8.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">08 - Canto para as refeições</h5>
+                  <p class="card-text">Ó Senhor, abençoai/Ao Senhor agradecemos...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/9.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">09 - És agua viva</h5>
+                  <p class="card-text">Eu te peço desta água que tu tens...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/10.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">10 - Quando o dia da paz...</h5>
+                  <p class="card-text">Quando o dia da paz renascer...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/11.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">11 - Utopia</h5>
+                  <p class="card-text">Das muitas coisas / Do meu tempo de criança...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/12.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">12 - Como é grande o meu amor</h5>
+                  <p class="card-text">Eu tenho tanto pra lhe falar...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/13.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">13 - Salmo 22</h5>
+                  <p class="card-text">Pelos prados e campinas...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/14.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">14 - Obrigado senhor</h5>
+                  <p class="card-text">Obrigado senhor porque és meu amigo...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/15.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">15 - Ensina teu povo a rezar</h5>
+                  <p class="card-text">Ensina teu povo a rezar...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/16.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">16 - O bom cristão</h5>
+                  <p class="card-text">Parece que eu sabia Que hoje era o dia...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/17.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">17 - Porque ele vive</h5>
+                  <p class="card-text">Deus enviou seu Filho amado...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/18.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">18 - Deixa a luz do céu entrar</h5>
+                  <p class="card-text">Tu anseias, eu bem sei...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/19.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">19 - Eu quero apenas </h5>
+                  <p class="card-text">Eu quero apenas olhar os campos...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/20.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">20 - Oração de são francisco</h5>
+                  <p class="card-text">Senhor,fazei-me instrumento de vossa paz...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/21.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">21 - Belo pra mim</h5>
+                  <p class="card-text">Belo pra mim...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/22.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">22 - Maria de Nazaré</h5>
+                  <p class="card-text">Maria de Nazaré, Maria me cativou...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/23.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">23 - Para ser feliz</h5>
+                  <p class="card-text">Para ser feliz é preciso ver esse céu azuL...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/24.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">24 - Oração da família</h5>
+                  <p class="card-text">Que nenhuma família comece em...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/25.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">25 - Homenzinho Torto</h5>
+                  <p class="card-text">Havia um homenzinho torto...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/26.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">26 - Buraquinho</h5>
+                  <p class="card-text">Se você no céu...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/27.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">27 - Noites Traiçoeiras</h5>
+                  <p class="card-text">Deus está aqui neste momento...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/28.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">28 - O amor</h5>
+                  <p class="card-text">O amor é o bem maior...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/29.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">29 - O importante é rosa</h5>
+                  <p class="card-text">E você que vai sozinho..</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/30.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">30 - Tua família</h5>
+                  <p class="card-text">Percebe e entende que os melhores amigos...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+          <li class="col-sm-4 mb-3">
+            <a href="/encontro/letras/31.html" class="text-decoration-none">
+              <div class="card border border-primary-subtle shadow">
+                <div class="card-body">
+                  <h5 class="card-title">31 - Derrama o teu amor aqui</h5>
+                  <p class="card-text">Senhor, eu quero obedecer...</p>
+                  <button type="button" class="btn btn-primary letra"><i class="fa fa-book" aria-hidden="true"></i>
+                    Letra</button>
+                </div>
+              </div>
+
+
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
